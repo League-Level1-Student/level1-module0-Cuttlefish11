@@ -26,19 +26,25 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+String a = "https://lithub.com/wp-content/uploads/2020/09/Pink_1.jpg";
 		// 2. create a variable of type "Component" that will hold your image
+Component b = createImage(a);
 
 		// 3. use the "createImage()" method below to initialize your Component
-
+quizWindow.add(b);
 		// 4. add the image to the quiz window
-
+quizWindow.pack();
 		// 5. call the pack() method on the quiz window
 
 		// 6. ask a question that relates to the image
-
+String c = JOptionPane.showInputDialog("What animal is that?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+if (c.equals("An axolotl") || c.equals("axolotl") || c.equals("Axolotl") || c.equals("an axolotl")) {
+	System.out.println("CORRECT :)");
+}
+else {
+	System.out.println("INCORRECT :(");	
+}
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
