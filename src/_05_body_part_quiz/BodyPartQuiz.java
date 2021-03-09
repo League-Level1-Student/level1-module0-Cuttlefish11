@@ -65,38 +65,41 @@ score++;
 }
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
-else {
+else if (!guess.equals("arnold")  || !guess.equals("Arnold")) {
 	JOptionPane.showMessageDialog(null, "You got it wrong. That's Arnold!");	
 }
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
-		else if (guess.equals("leonardo")  || guess.equals("Leonardo")) {
+		String guessII = JOptionPane.showInputDialog("who is this?");
+		if (guessII.equals("leonardo")  || guessII.equals("Leonardo")) {
 			JOptionPane.showMessageDialog(null, "You got it right!");
 		score++;
 		}
 				// 6. Otherwise:
 				// -- Tell them they are wrong and who the person is
-		else {
+		else if (!guessII.equals("leonardo") || !guessII.equals("Leonardo")){
 			JOptionPane.showMessageDialog(null, "You got it wrong. That's Leonardo!");	
 		}
 		showNextImage();
-		else if (guess.equals("morgan")  || guess.equals("Morgan")) {
+		String guessIII = JOptionPane.showInputDialog("who is this?");
+		if (guessIII.equals("morgan")  || guessIII.equals("Morgan")) {
 			JOptionPane.showMessageDialog(null, "You got it right!");
 		score++;
 		}
 				// 6. Otherwise:
 				// -- Tell them they are wrong and who the person is
-		else {
+		else if (!guessIII.equals("Morgan") || !guessIII.equals("morgan")){
 			JOptionPane.showMessageDialog(null, "You got it wrong. That's Morgan!");	
 		}
 		showNextImage();
-		if (guess.equals("jack")  || guess.equals("Jack")) {
+		String guessIV = JOptionPane.showInputDialog("who is this?");
+		if (guessIV.equals("jack")  || guessIV.equals("Jack")) {
 			JOptionPane.showMessageDialog(null, "You got it right!");
 		score++;
 		}
 				// 6. Otherwise:
 				// -- Tell them they are wrong and who the person is
-		else {
+		else if (!guessIV.equals("jack") || !guessIV.equals("Jack")){
 			JOptionPane.showMessageDialog(null, "You got it wrong. That's Jack!");	
 		}
 
